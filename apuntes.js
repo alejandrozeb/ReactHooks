@@ -16,4 +16,11 @@ nos olvidamos del ciclo de vida,y pensamos en los efectos
 
 llamamos una api como ejemplo
 
+----use context---------
+pasar  informarcion entre componentes.
+podemos trabajar,mejor entre componentes padre-hijo
+hijo-padre
+
+
+
 */
