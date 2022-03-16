@@ -21,6 +21,11 @@ pasar  informarcion entre componentes.
 podemos trabajar,mejor entre componentes padre-hijo
 hijo-padre
 
+--------useReducer-----
+como useState pero mas escalable
+forma mas amigable para trabaar con el estado
+usado con redux mayormente
+
 
 
 */
