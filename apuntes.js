@@ -26,6 +26,18 @@ como useState pero mas escalable
 forma mas amigable para trabaar con el estado
 usado con redux mayormente
 
+-------Memoization-------------------------------
+Tecnica para evitar calculos innecesarios, optimizacion de memoria.
+const memo = [];
+
+function memoFactorial(n) {
+	if (n === 1) {
+		return 1;
+	} else if (!memo[n]) {
+		memo[n] = n * memoFactorial(n - 1);
+	}  
+	return memo[n];
+}
 
 
 */
