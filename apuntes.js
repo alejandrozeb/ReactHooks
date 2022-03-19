@@ -42,5 +42,8 @@ function memoFactorial(n) {
 ejemplo faactorial
 ----------useMemo------------------
 usamos memorizacion
+---------use ref
+Manejo de inputs y formularios
+
 
 */
