@@ -47,5 +47,29 @@ Manejo de inputs y formularios
 
 -----use callback------------------
 evita calculos innecesarios en funciones
+----optimizar componentes------
+react.pureComponent
+
+es similar a react.component usa por defecto shouldComponentUpdate
+que comparara props nuevas y viejas.(shallow comparison)
+
+class App extends React.PureComponent {  }
+class Counter extends React.PureComponent {  }
+class Permissions extends React.PureComponent { }
+
+ademas tambien podemos hacer wrap con use.memo
+const App = React.memo(function() {
+    
+});
+
+const Permissions = React.memo(function({ canEdit }) {
+    
+});
+
+const Counter = React.memo(function({ count }) {
+    
+});
+
+pero se debe tener cuidado de usar en todos los componentes por podrias estar haciend todo lo contrario a optimizar lo recomendable es usarlo en componentes que no cambian.
 
 */
