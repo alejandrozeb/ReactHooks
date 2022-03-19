@@ -45,5 +45,7 @@ usamos memorizacion
 ---------use ref
 Manejo de inputs y formularios
 
+-----use callback------------------
+evita calculos innecesarios en funciones
 
 */
