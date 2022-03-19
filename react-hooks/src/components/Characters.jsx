@@ -41,12 +41,19 @@ const Characters = () => {
     dispath({ type: "ADD_TO_FAVORITE", payload: favorite });
   };
 
-  /* const handleSearch = (event) => {
+  /* sin usereef 
+  const handleSearch = (event) => {
     setSearch(event.target.value)
   } */
+  /* con useref
   const handleSearch = () => {
     setSearch(searchInput.current.value);
-  };
+  }; */
+
+  //pasando a componente
+  const handleSearch = useCallback(()=>{
+    setSearch(searchInput.current.value);
+  }, []);
 
   /*  const filteredUsers = characters.filter((user) => {
     return user.name.toLowerCase().includes(search.toLowerCase());
