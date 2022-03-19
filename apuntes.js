@@ -39,5 +39,8 @@ function memoFactorial(n) {
 	return memo[n];
 }
 
+ejemplo faactorial
+----------useMemo------------------
+usamos memorizacion
 
 */
