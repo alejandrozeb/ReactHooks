@@ -1,16 +1,18 @@
 import React, {
   useState,
-  useEffect,
   useReducer,
   useMemo,
   useRef,
   useCallback,
 } from "react";
 import Search from "./Search";
+import useCharacters from "../hooks/useCharacters";
 
 const initialState = {
   favorites: [],
 }; //iniciamos para el reducer
+
+const API = "https://rickandmortyapi.com/api/character";
 
 const favoriteReducer = (state, action) => {
   switch (action.type) {
@@ -25,16 +27,17 @@ const favoriteReducer = (state, action) => {
 };
 
 const Characters = () => {
-  const [characters, setCharacters] = useState([]);
+  //const [characters, setCharacters] = useState([]);
   const [favorites, dispath] = useReducer(favoriteReducer, initialState);
   const [search, setSearch] = useState("");
   const searchInput = useRef(null);
 
-  useEffect(() => {
+  const characters = useCharacters(API);
+  /* useEffect(() => {
     fetch("https://rickandmortyapi.com/api/character")
       .then((response) => response.json())
       .then((data) => setCharacters(data.results));
-  }, []);
+  }, []); */
   //dos parametros, una funcion anonima y otra variable escuchando
 
   const handleClick = (favorite) => {

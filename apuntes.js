@@ -71,5 +71,8 @@ const Counter = React.memo(function({ count }) {
 });
 
 pero se debe tener cuidado de usar en todos los componentes por podrias estar haciend todo lo contrario a optimizar lo recomendable es usarlo en componentes que no cambian.
+-----mas hooks y custom hooks-----
+separamos la logica y usarlo en cualquier componente
+
 
 */
