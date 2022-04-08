@@ -1,4 +1,4 @@
-/* {
+{
     "extends": [
       "airbnb",
       "prettier"
@@ -34,4 +34,4 @@
       "navigator": true
     },
     "parser": "babel-eslint"
-  } */
+  }
