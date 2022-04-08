@@ -8,7 +8,7 @@ const Header = () => {
                 PlatziConf Merch
             </h1>
             <div className="Header-checkout">
-                checkout
+                checkoutasdasd
             </div>
         </div>
     );
